@@ -1,4 +1,4 @@
-package strategy;
+
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -22,8 +22,15 @@ public abstract class MoveBehavior {
      * @param speed     The speed at which the character moves 1, 2, 3. 1 is slow, 3
      *                  is fast
      */
+    MoveBehavior mb;
     public void move(ArrayList<String> character, int speed) {
-        // TBD
+        for(int i =0; i<NUM_MOVES; i++)
+        {
+            mb.displayCharacter(character);
+            mb.clear();
+            mb.pushCharacterForward(character);
+            mb.sleep(i);
+        } 
     }
 
     /**
