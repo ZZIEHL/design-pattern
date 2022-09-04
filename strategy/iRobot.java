@@ -14,7 +14,7 @@ public class iRobot extends Robot{
     public String toString() {
 
         ArrayList<String> character = new ArrayList<String>();
-        character.add("__\n|\n__");
+        character.add("__\n |\n_|_");
         return character.toString() + this.name;  
       }
 }
