@@ -13,6 +13,7 @@ public class Dad implements Observer {
     public Dad(Subject baby)
     {
         Random rand = new Random();
+        //rand.nextBoolean(); is a thing
         this.baby = baby;
         baby.registerObserver(this);
         random = rand.nextInt(2);
@@ -40,6 +41,5 @@ public class Dad implements Observer {
         
         
     }
-    
     
 }

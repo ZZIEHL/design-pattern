@@ -100,27 +100,24 @@ public class Baby  implements Subject{
     public void angryCry()
     {
         
-        Cry cry =Cry.ANGRY;
         System.out.println("Waaaaaaaaaaa! " + name + " is feeling abandoned and angry.");
-        notifyObservers(cry);
+        notifyObservers(Cry.ANGRY);
     }
     /**
      * This method sets the cry type to hungry and prints out the specified string. also notifies the observers
      */
     public void hungryCry()
     {
-        Cry cry =Cry.HUNGRY;
         System.out.println("Neh Neh Neh! " + name + " is starving!!!!");
-        notifyObservers(cry);
+        notifyObservers(Cry.HUNGRY);
     }
     /**
      * This method sets the cry type to wet and prints out the specified string. also notifies the observers
      */
     public void wetCry()
     {
-        Cry cry =Cry.WET;
         System.out.println("Aaaaaaaa! " + name + " is WET!");
-        notifyObservers(cry);
+        notifyObservers(Cry.WET);
     }
     
 }
