@@ -1,7 +1,9 @@
 package decorator;
 
 import java.util.ArrayList;
-
+/**
+ * This is the star class, which accesses the txt file with the star, and passes it into the IntegrateDecor method
+ */
 public class Star extends TreeDecorator {
     private Tree tree;
     public Star(Tree tree)
