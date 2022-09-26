@@ -35,7 +35,7 @@ public abstract class Cereal {
     }
     /**
      * This method is to return the boxing of the cereal, which returns whatever cereal name is being called with the child, and also the toys along 
-     * @return
+     * @return the string of preparation for the specified cereal, as well as the random toy
      */
     public String boxCereal()
     {
@@ -44,6 +44,10 @@ public abstract class Cereal {
           name,name,name,toys.get(random));
         
     }
+    /**
+     * this method returns the price and name of the cereal as well as the string that accompanies it 
+     * @return the price and name of the specified cereal
+     */
     public String priceCereal()
     {
         return String.format("putting the price tag of $%.2f on the %s box",price, name);
